@@ -18,12 +18,12 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "yarn tsc -p tsconfig.build.json && vite build",
+    "build": "vite build && tsc -p tsconfig.build.json",
     "dev": "vite",
     "preview": "vite preview",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "prepublishOnly": "yarn build"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "$npm_execpath run build"
   },
   "keywords": [
     "vite",
@@ -45,7 +45,7 @@
     "url": "https://github.com/andr3medeiros/vite-virtual-entry-server-plugin/issues"
   },
   "homepage": "https://github.com/andr3medeiros/vite-virtual-entry-server-plugin#readme",
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^24.8.1",
     "fp-ts": "^2.15.0",
     "glob": "^11.0.0"

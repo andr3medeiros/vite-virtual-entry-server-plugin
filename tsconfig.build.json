@@ -4,6 +4,8 @@
     "noEmit": false,
     "outDir": "./dist",
     "declaration": true,
+    "emitDeclarationOnly": true,
+    "sourceMap": true,
     "allowImportingTsExtensions": false
   },
   "exclude": ["**/*.test.ts", "**/*.spec.ts", "vite.config.ts"]
