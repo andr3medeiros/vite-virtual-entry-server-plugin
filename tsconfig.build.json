@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./dist",
+    "declaration": true,
+    "allowImportingTsExtensions": false
+  },
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "vite.config.ts"]
+}
